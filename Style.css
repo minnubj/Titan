@@ -1,0 +1,51 @@
+.bg-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.252),black),url("bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+.card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card {
+      height: 100%;
+    }
+    
+
+    .card-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px; /* same text block height */
+    }
+
+   .card:hover{
+    border: 3px solid rgb(70, 67, 67);
+    transition: 0.5s;
+    transform: scale(1.02)
+   }
+   .icons{
+    align-items: center;
+    justify-content: center;
+   }
+
+   .icons svg{
+     height: 20px;
+   }
+
+
+
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 250px;
+      }
+
+      .card-body {
+        height: auto;
+        padding: 1rem;
+      }
+    }
